@@ -3,33 +3,95 @@
   <head>
   <title> Daniel Lee </title>
   <style>
-    p.para{
-      font-family: url(sansation_light.woff);
+    .dropbtn{
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
     }
-    a{
+    .dropdown{
+      text-align: center;
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-content a{
+      color: black;
+      padding: 12px, 16px;
       text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #a6a6a6}
+
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    .dropdown:hover .dropbtn{
+      background-color: #3e8e41;
     }
     h1{
       text-align: center;
+      font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    	font-size: 70px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 500;
+    	line-height: 26.4px;
+    }
+    h2{
+      text-align: center;
+      font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    	font-size: 35px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 400;
+    	line-height: 40px;
     }
 
     p1{
     	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
-    	font-size: 14px;
+    	font-size: 16px;
     	font-style: normal;
     	font-variant: normal;
-    	font-weight: 400;
-    	line-height: 20px;
+    	font-weight: 400px;
+      word-wrap: break-word;
+      width:400px;
+      height: 200px;
+      float:center;
+      padding:10px;
     }
 
-    /*p{
-      url(sansation_light.woff);
-      text-indent: 50px;
-      text-align: justify;
-      letter-spacing: 3px;
-    }*/
+    #header{
+        color:white;
+        text-align:center;
+        height: 250px;
+    }
+
+    #p2{
+      text-align: center;
+      width:cover;
+      height: 700px;
+      float:center;
+      padding:10px;
+    }
+
+    #footer {
+        color: black;
+        clear:both;
+        text-align:center;
+        padding:5px;
+    }
+
     body{
-      background-image:url("saddleMountain.jpg");
+      background-image:url("saddleMountain.png");
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-size: cover;
@@ -37,16 +99,34 @@
       background-repeat: no-repeat !important;
       background-attachment: fixed;
     }
-  </style>
+    </style>
   </head>
-  <h1> Welcome </h1>
-  <p1> My first paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan leo in sem varius ullamcorper. Maecenas dapibus quam sed libero elementum viverra. Etiam consequat dolor sem, at venenatis metus pretium nec. Donec sit amet sagittis neque. Donec dictum convallis convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer suscipit accumsan ex vitae fermentum. In blandit nisl in sapien bibendum gravida a et augue. Sed dictum nibh neque, non dictum lorem pretium non. Mauris eu diam at massa ullamcorper feugiat. Mauris iaculis nisl non leo lobortis, sit amet lacinia libero molestie. Sed dolor magna, commodo eu ipsum vel, ullamcorper maximus libero. Nunc maximus viverra elit ut scelerisque.
+  <body>
+  <div id="header">
+  <h1> Welcome! </h1>
+  <h2> This is my personal portfolio. Here you can learn about me, so feel free to explore! </h2>
+  </div>
 
-  Nullam sit amet est congue, interdum justo tincidunt, ullamcorper sapien. Sed ac erat elementum, lobortis libero non, accumsan nisl. Aenean egestas nulla ac mi rutrum iaculis sed at tortor. Praesent lacinia neque vel mattis aliquam. Nam egestas ipsum interdum magna bibendum interdum. Maecenas viverra consequat feugiat. Nulla maximus ante sit amet felis tempus, in hendrerit tortor gravida. Donec sed lorem mollis orci tempor ultricies. Curabitur metus mauris, interdum at purus quis, bibendum vestibulum turpis. Curabitur egestas mauris ac lorem semper cursus. Proin mattis urna odio, ac elementum enim fringilla pharetra.
+  <div id="p1">
+    <p1> My name is Daniel Lee. I am a freshman at Oregon State University studying Computer Science.</p1>
+  </div>
 
-  Proin ac tincidunt ante, sed cursus ex. Quisque egestas, est ac rutrum eleifend, orci enim condimentum lorem, ullamcorper vulputate felis metus commodo massa. Phasellus ac metus porta, pulvinar odio blandit, aliquam urna. Duis porttitor augue ac quam congue, et vestibulum nisi pharetra. Praesent eu mauris molestie, tristique quam sit amet, elementum nisl. Duis eu orci et tortor eleifend imperdiet eget ut orci. Mauris luctus dolor at ipsum blandit, ultricies ultrices sapien hendrerit. Vivamus in commodo justo.
-  </p1>
-  <a href="https://www.flickr.com/photos/141497454@N04/">My photography</a>
+  <div id="p2">
+    <div class="dropdown">
+      <button class="dropbtn">About Me</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <a href="https://www.flickr.com/photos/141497454@N04/">My photography</a> -->
+
+  <div id="footer"> Copyright Daniel Lee  </div>
 
   </body>
 </html>
